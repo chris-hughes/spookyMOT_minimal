@@ -142,13 +142,15 @@ function getData(regno, manu, callback) {
 	    console.log(msg);
 	});
 
-	// spooky.on('error', function (e, stack) {
-	//     console.error(e);
+	spooky.on('error', function (e, stack) {
+	    console.error(e);
 
-	//     if (stack) {
-	//         console.log(stack);
-	//     }
-	// });
+	    if (stack) {
+	        console.log(stack);
+	    }
+
+	    callback(e)
+	});
 
 	// spooky.on('log', function (log) {
 	//     if (log.space === 'remote') {
@@ -157,15 +159,6 @@ function getData(regno, manu, callback) {
 	// });
 
 
-
-
-
-
-	// setTimeout(function() {
-
-	// 	callback(null, {RESULTS: "YEAH!!!", reg: reg})
-
-	// }, Math.random() * 3000)
 }
 
 
