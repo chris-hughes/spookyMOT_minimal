@@ -4,9 +4,12 @@
   "description": "spooking peoples MOT",
   "main": "index.js",
   "dependencies": {
+    "async": "^1.5.2",
     "csv": "^0.4.6",
     "event-stream": "^3.3.2",
-    "newline-json": "^0.1.1"
+    "jquery": "^2.2.0",
+    "newline-json": "^0.1.1",
+    "spooky": "^0.2.5"
   },
   "devDependencies": {},
   "scripts": {
