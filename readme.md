@@ -7,8 +7,6 @@ Web scraper to collect vehicle MOT history
 ### Prerequisites
 
 * [Node.js](http://nodejs.org) >= 0.8
-* [PhantomJS](http://phantomjs.org/) >= 1.9
-* [CasperJS](http://casperjs.org/) >= 1.0
 
 Install dependencies using npm
 
