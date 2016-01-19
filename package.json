@@ -5,11 +5,11 @@
   "main": "index.js",
   "dependencies": {
     "async": "^1.5.2",
+    "cheerio": "^0.19.0",
     "csv": "^0.4.6",
     "event-stream": "^3.3.2",
-    "jquery": "^2.2.0",
     "newline-json": "^0.1.1",
-    "spooky": "^0.2.5"
+    "request": "^2.67.0"
   },
   "devDependencies": {},
   "scripts": {
@@ -19,7 +19,7 @@
     "type": "git",
     "url": "https://github.com/chris-hughes/spookyMOT_minimal.git"
   },
-  "author": "",
+  "author": "chris-hughes",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/chris-hughes/spookyMOT_minimal/issues"
