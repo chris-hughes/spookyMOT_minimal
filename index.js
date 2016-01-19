@@ -5,9 +5,10 @@ var fs = require('fs'),
 	es = require('event-stream'),
 	scrape = require('./scrape');
 
-var out = fs.createWriteStream('test_vehicles_OUT.jsonl')
+var out = fs.createWriteStream(process.argv[2].slice(0,-4)+'_out.jsonl')
 
-fs.createReadStream('test_vehicles.csv')
+
+fs.createReadStream(process.argv[2])
 	.pipe(csv.parse())
 	.pipe(es.map(function(data, callback){
 		scrape(data[0], data[1], callback)
